@@ -1,0 +1,14 @@
+metric,value,notes
+sampling_frequency_hz,50000,Configured sampling frequency
+window_duration_ms,20,Sliding window
+hop_ms,10,50 percent overlap
+diagnostic_threshold,4,Robust deviation score threshold
+feature_windows,299,Reported real-data run
+baseline_windows,80,Model baseline 3.20-4.00 s
+flagged_windows_total,189,Anomaly-candidate windows not individual arcs
+flagged_windows_selected_event,11,11 of 11 windows in 4.29-4.40 s
+flagged_windows_model_baseline,0,0 of 80 windows in 3.20-4.00 s
+maximum_robust_score,908.31,Reported maximum score
+sinusoidal_test_flagged_windows,2,2 of 5; saved results confirm this test only
+voltage_dip_test,NOT_VERIFIED,Do not report as confirmed
+random_noise_test,NOT_VERIFIED,Do not report as confirmed
