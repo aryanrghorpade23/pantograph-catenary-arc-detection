@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this educational MATLAB project, please cite the repository and the original pantograph-arc dataset paper."
+title: "Pantograph-Catenary Arc Detection Using Time-Frequency Signal Analysis in MATLAB"
+authors:
+  - family-names: Ghorpade
+    given-names: Aryan
+type: software
+repository-code: "https://github.com/aryanrghorpade23/pantograph-catenary-arc-detection"
+keywords:
+  - pantograph
+  - railway electrification
+  - electrical arc
+  - MATLAB
+  - FFT
+  - STFT
+  - wavelet analysis
+  - anomaly detection
