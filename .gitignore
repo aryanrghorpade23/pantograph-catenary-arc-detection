@@ -1,0 +1,19 @@
+# MATLAB generated files
+*.asv
+*.m~
+*.slxc
+*.mex*
+
+# Local datasets (download separately from Mendeley Data)
+Dataset/**/*.mat
+Dataset/**/*.txt
+Dataset/**/*.rar
+Dataset/**/*.zip
+
+# Local MATLAB output (a reviewed sample result is committed under Results/)
+Pantograph_Diagnostic_Results.mat
+
+# Editor / operating system files
+.DS_Store
+Thumbs.db
+.vscode/
