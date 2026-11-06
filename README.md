@@ -40,7 +40,7 @@ This repository contains an undergraduate Signals and Systems project that studi
 ├── MATLAB/
 │   └── Pantograph_Arc_Diagnostic_Final.m
 ├── Documentation/
-│   ├── Project_Report.docx
+│   ├── Project_Summary.md
 │   ├── Methodology.md
 │   └── References.md
 ├── Dataset/
@@ -97,7 +97,7 @@ These intervals are configured for the supplied `MM_T_1.mat` example. They may n
 
 ## Results snapshot
 
-The supplied MATLAB results file and report record the following real-data diagnostic outputs for this run:
+The supplied MATLAB output and project report record the following real-data diagnostic outputs for this run. A compact copy of the reported metrics is available in [Results/Diagnostic_Summary.csv](Results/Diagnostic_Summary.csv):
 
 | Metric | Recorded result |
 |---|---:|
@@ -110,41 +110,17 @@ The supplied MATLAB results file and report record the following real-data diagn
 
 The 11/11 figure applies only to the selected interval in this one recording. The 189 flagged windows are **not 189 separate arcs**. Many windows remain flagged after the initial transient because signal characteristics continue to differ from the selected baseline; overlapping windows can also respond to the same disturbance. These are anomaly candidates, not confirmed arc events and not a general detection-accuracy measurement.
 
-The saved results file confirms the sinusoidal synthetic-burst test (2 of 5 windows flagged). The voltage-dip and random-noise entries in the report's synthetic-results table remain marked as requiring verification; do not treat those two entries as confirmed results until the tests are rerun and their outputs saved.
+The saved MATLAB results supplied for review confirm the sinusoidal synthetic-burst test (2 of 5 windows flagged). The voltage-dip and random-noise entries in the report's synthetic-results table remain marked as requiring verification; do not treat those two entries as confirmed results until the tests are rerun and their outputs saved.
 
 **Statistical-table note:** The supplied report contains descriptive voltage statistics for the stated 4.00–4.10 s and 4.29–4.40 s intervals. Those values are reproduced in the report, but they have not been independently recalculated from the full source recording as part of this repository setup. Re-run the script and verify the Command Window values before using those individual statistics in further analysis.
 
 ## Figures
 
-The six screenshots below are the MATLAB outputs supplied with the project. They are illustrative outputs from the recorded-data experiment.
-
-### Figure 1 — Real recorded signals
-
-![Real pantograph voltage, current and filter output voltage](Results/Figures/01_real_signal_waveforms.png)
-
-### Figure 2 — Baseline and event interval comparison
-
-![Selected baseline and event intervals](Results/Figures/02_baseline_event_comparison.png)
-
-### Figure 3 — FFT comparison
-
-![Baseline and transient single-sided FFT spectra](Results/Figures/03_fft_comparison.png)
-
-### Figure 4 — STFT spectrogram
-
-![STFT spectrogram around the transient](Results/Figures/04_stft_spectrogram.png)
-
-### Figure 5 — Wavelet detail coefficients
-
-![db4 wavelet detail coefficients](Results/Figures/05_wavelet_details.png)
-
-### Figure 6 — Real-data diagnostic results
-
-![Sliding-window features and robust diagnostic scores](Results/Figures/06_real_data_diagnostic_results.png)
+The supplied MATLAB run produced six figures: real signal waveforms, baseline/event comparison, FFT comparison, STFT spectrogram, wavelet detail coefficients, and diagnostic results. Their inventory is documented in [Results/Figures/README.md](Results/Figures/README.md). Image files can be added to that folder when uploaded.
 
 ## Documentation
 
-- [Project report (DOCX)](Documentation/Project_Report.docx)
+- [Project summary](Documentation/Project_Summary.md)
 - [Methodology and parameter notes](Documentation/Methodology.md)
 - [References and dataset attribution](Documentation/References.md)
 - [Dataset access and variables](Dataset/README.md)
@@ -164,7 +140,7 @@ The six screenshots below are the MATLAB outputs supplied with the project. They
 
 The dataset and the paper describing it are third-party research materials. This repository links to the original dataset rather than republishing the complete archive or the paper PDF. The supplied paper manuscript states that its author-accepted version is under **CC BY-NC-ND 4.0**; consult the publisher/source terms before redistributing it or adapting its content. See the source paper DOI in [Documentation/References.md](Documentation/References.md).
 
-The report copy in this public repository omits the student MIS-number row. The original uploaded report is not modified.
+The full DOCX report was reviewed during repository preparation but is not included in this initial GitHub snapshot.
 
 ## Acknowledgement
 
